@@ -125,11 +125,8 @@ class ImageResizer(Transformer):
         return image, label
 
 class LabelIndexer(Transformer):
-    """Convert label to index by vocab
-    
-    Attributes:
-        vocab (typing.List[str]): List of characters in vocab
-    """
+    """Convert label to index by vocab"""
+   
     def __init__(
         self, 
         vocab: typing.List[str]
