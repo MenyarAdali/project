@@ -1,3 +1,8 @@
+# Ignore all FFmpeg source code so GitHub doesn't count it as C
+project/ffmpeg-7.0/* linguist-detectable=false
+
+# Mark your Python code as the primary language
 *.py linguist-detectable=true
-*.c linguist-detectable=false
-*.h linguist-detectable=false
+
+# Optional: ensure Python is used for language stats
+project/MLTU/** linguist-language=Python
